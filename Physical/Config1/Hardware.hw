@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.0.18.71 SP?>
+<Hardware xmlns="http://br-automation.co.at/AS/Hardware">
+  <Module Name="3IF789.9-1" Type="3IF789.9-1" Version="1.1.3.0">
+    <Connection Connector="SS" TargetModule="4PP420_1043_75" TargetConnector="SS1" />
+  </Module>
+  <Module Name="4PP420_1043_75" Type="4PP420.1043-75" Version="1.0.0.0">
+    <Parameter ID="Cyclic1Duration" Value="10000" />
+    <Parameter ID="Cyclic1Tolerance" Value="10000" />
+    <Parameter ID="Cyclic2Duration" Value="20000" />
+    <Parameter ID="Cyclic2Tolerance" Value="20000" />
+    <Parameter ID="Cyclic3Duration" Value="50000" />
+    <Parameter ID="Cyclic3Tolerance" Value="50000" />
+    <Parameter ID="Cyclic4Duration" Value="100000" />
+    <Parameter ID="Cyclic4Tolerance" Value="100000" />
+    <Parameter ID="Cyclic5Duration" Value="200000" />
+    <Parameter ID="Cyclic5Tolerance" Value="200000" />
+    <Parameter ID="Cyclic6Duration" Value="500000" />
+    <Parameter ID="Cyclic6Tolerance" Value="500000" />
+    <Parameter ID="Cyclic7Duration" Value="1000000" />
+    <Parameter ID="Cyclic7Tolerance" Value="1000000" />
+    <Parameter ID="Cyclic8Duration" Value="10000" />
+    <Parameter ID="Cyclic8Tolerance" Value="30000000" />
+  </Module>
+  <Module Name="8I44xxxxxxx.xxx-1" Type="8I44xxxxxxx.xxx-1" Version="1.1.3.0">
+    <Connection Connector="SER1" TargetModule="X20CS1030" TargetConnector="IF1" NodeNumber="10" />
+    <Parameter ID="Supervision" Value="off" />
+    <Parameter ID="COD" Value="0" />
+  </Module>
+  <Module Name="X20BB82" Type="X20BB82" Version="1.0.0.0">
+    <Connector Name="IF1">
+      <Parameter ID="CycleTime" Value="1000" />
+    </Connector>
+  </Module>
+  <Module Name="X20BC1083" Type="X20BC1083" Version="1.3.6.0">
+    <Connection Connector="PLK1" TargetModule="3IF789.9-1" TargetConnector="IF2" NodeNumber="1" />
+    <Connection Connector="SL" TargetModule="X20BB82" TargetConnector="SL1" />
+  </Module>
+  <Module Name="X20BM11" Type="X20BM11" Version="1.0.0.0">
+    <Connection Connector="X2X1" TargetModule="X20BB82" TargetConnector="IF1" />
+  </Module>
+  <Module Name="X20CS1030" Type="X20CS1030" Version="1.3.0.0">
+    <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
+    <Connection Connector="SL" TargetModule="X20BM11" TargetConnector="SL1" />
+    <Connector Name="IF1">
+      <Parameter ID="Baudrate" Value="19200" />
+      <Parameter ID="DeviceType" Value="RS485" />
+      <Parameter ID="ActivateMODBUSRTU" Value="1" />
+    </Connector>
+  </Module>
+  <Module Name="X20PS9400" Type="X20PS9400" Version="1.0.2.0">
+    <Connection Connector="SS1" TargetModule="X20TB12" TargetConnector="SS" />
+    <Connection Connector="PS" TargetModule="X20BB82" TargetConnector="PS1" />
+  </Module>
+  <Module Name="X20TB12" Type="X20TB12" Version="1.0.0.0" />
+  <Module Name="X20TB12a" Type="X20TB12" Version="1.0.0.0" />
+</Hardware>

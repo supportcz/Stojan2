@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.0.18.71 SP?>
+<Configuration xmlns="http://br-automation.co.at/AS/Configuration">
+  <Objects>
+    <Object Type="File" Description="Hardware configuration">Hardware.hw</Object>
+    <Object Type="File" Description="Hardware topology">Hardware.hwl</Object>
+    <Object Type="Cpu">4PP420_1043_75</Object>
+  </Objects>
+</Configuration>
