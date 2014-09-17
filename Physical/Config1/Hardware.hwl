@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<BR.AS.HardwareTopology Version="0.0.0.1">
+  <Modules>
+    <Module Name="4PP420_1043_75" Type="4PP420.1043-75" X="100" Y="-190" />
+    <Module Name="3IF789.9-1" Type="3IF789.9-1" X="294.099976" Y="-180" />
+    <Module Name="8I44xxxxxxx.xxx-1" Type="8I44xxxxxxx.xxx-1" X="580.1" Y="100" />
+    <Module Name="X20BB82" Type="X20BB82" X="359.099976" Y="100" />
+    <Module Name="X20BM11" Type="X20BM11" X="447.099976" Y="100" />
+    <Module Name="X20CS1030" Type="X20CS1030" X="447.099976" Y="100" />
+    <Module Name="X20TB12a" Type="X20TB12" X="447.099976" Y="127" />
+    <Module Name="X20PS9400" Type="X20PS9400" X="434.099976" Y="100" />
+    <Module Name="X20TB12" Type="X20TB12" X="434.099976" Y="127" />
+    <Module Name="X20BC1083" Type="X20BC1083" X="409.099976" Y="100" />
+    <Module Name="8I64xxxxxxx.00x-1" Type="8I64xxxxxxx.00x-1" X="509.5" Y="-154" />
+  </Modules>
+  <Links />
+</BR.AS.HardwareTopology>
