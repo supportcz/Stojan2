@@ -10,4 +10,5 @@
  ********************************************************************)
 VAR
 	AsIOAccRead_0 : AsIOAccRead;
+	ModuleOk : BOOL;
 END_VAR

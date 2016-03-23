@@ -1,14 +1,18 @@
 (********************************************************************
- * COPYRIGHT -- Bernecker + Rainer
+ * COPYRIGHT --  
  ********************************************************************
- * File: IoMap.iom
+ * Program: x64task
+ * File: x64task.var
  * Author: vancurar
- * Created: July 03, 2014
+ * Created: November 15, 2011
  ********************************************************************
- * IO mapping file
+ * Local variables of program x64task
  ********************************************************************)
-VAR_CONFIG
-	::ACPi:CMDD_Output AT %QW."8I64xxxxxxx.00x-1".CMDD_Output;
-	::ACPi:LFRD_Output AT %QW."8I64xxxxxxx.00x-1".LFRD_Output;
-	::ACPi:ETAD_Input AT %IW."8I64xxxxxxx.00x-1".ETAD_Input;
+VAR
+	CMDD_Output : UINT; (*control word*)
+	ETAD_Input : UINT; (*status word*)
+	switchOn : BOOL;
+	LFRD_Output : INT; (*set speed [rpm]*)
+	quickStop : BOOL;
+	reset : BOOL;
 END_VAR
